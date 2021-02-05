@@ -60,7 +60,6 @@ tree -L 4
 
       mkdir collections
 
-
 * Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections.
 
       ansible-galaxy collection install cisco.nxos
@@ -73,6 +72,10 @@ tree -L 4
       │       │   └── netcommon
       │       └── cisco
       │           └── nxos
+      
+* Step 6) Create the playbook to run your tasks. I use the prefix `pb` for playbook proceeded by the role name `pb_cisco_nxos.yaml`
+
+
 
 Requirements
 ------------
@@ -101,6 +104,7 @@ Including an example of how to use your role (for instance, with variables passe
     ---
     - hosts: nxos
       gather_facts: true
+      connection: httpapi
       roles:
           - { role: role_cisco_nxos }
 
