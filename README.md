@@ -43,11 +43,11 @@ tree -L 4
 
 #### Role creation.
 
-* Step 1) On a system with Internet access run the following to create the project directory with most necessary files. 
+* Step 1) On a system with Internet access run the following to create the project directory with the necessary files. 
 
       ansible-galaxy init role_cisco_nxos
       
-* Step 2) cd into the role directory and add the following text into the `ansible.cfg` file. This will allow you run the ansible-galaxy command to appropriately install the Cisco's NXOS collection. 
+* Step 2) cd into the role directory and add the following text into the `ansible.cfg` file that you need to also create. This will allow you run the `ansible-galaxy` command to appropriately install the Cisco's NXOS collection into your project directory. 
 
       [defaults]
       # Installs collections into [collections]/ansible_collections/namespace/collection_name
@@ -60,7 +60,7 @@ tree -L 4
 
       mkdir collections
 
-* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections.
+* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections to your collections directory.
 
       ansible-galaxy collection install cisco.nxos
 
@@ -76,7 +76,15 @@ tree -L 4
 * Step 6) Create the playbook to run your tasks. I use the prefix `pb` for playbook proceeded by the role name `pb_cisco_nxos.yaml`
           See the [example-playbook](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#example-playbook) below for contents.
 
+* Step 7) Add the neccessary variables to file `defaults/main.yml` required for your httpapi connection.
 
+      ansible_httpapi_use_ssl: yes
+      ansible_httpapi_validate_certs: no
+      ansible_network_os: nxos
+      ansible_user: ''
+      ansible_httpapi_password: ''
+
+* Step 8)
 
 Requirements
 ------------
