@@ -91,7 +91,7 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
-Cisco's NOX and Ansible's netcommon collections.
+Cisco's NXOS and Ansible's netcommon collections.
 
 Run on a computer with Internet access to access and download the required collections.
 
