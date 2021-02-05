@@ -56,7 +56,23 @@ tree -L 4
       # Installs roles into [current dir]/roles/namespace.rolename
       roles_path = ../
       
-* Step 3) 
+* Step 3) Create the collections directory inside your current directory `role_cisco_nxos`
+
+      mkdir collections
+
+
+* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections.
+
+      ansible-galaxy collection install cisco.nxos
+
+* Step 5) Verify that the following directory structure with the contents is created upon the successful result of step 4.
+
+      ├── collections
+      │   └── ansible_collections
+      │       ├── ansible
+      │       │   └── netcommon
+      │       └── cisco
+      │           └── nxos
 
 Requirements
 ------------
