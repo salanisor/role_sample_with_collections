@@ -43,9 +43,20 @@ tree -L 4
 
 #### Role creation.
 
-* Step 1) On a system with Internet access run the following.
+* Step 1) On a system with Internet access run the following to create the project directory with most necessary files. 
 
-      ansible-galaxy init role_sample_with_collections
+      ansible-galaxy init role_cisco_nxos
+      
+* Step 2) cd into the role directory and add the following text into the `ansible.cfg` file. This will allow you run the ansible-galaxy command to appropriately install the Cisco's NXOS collection. 
+
+      [defaults]
+      # Installs collections into [current dir]/ansible_collections/namespace/collection_name
+      collections_paths = ./collections
+
+      # Installs roles into [current dir]/roles/namespace.rolename
+      roles_path = ../
+      
+* Step 3) 
 
 Requirements
 ------------
