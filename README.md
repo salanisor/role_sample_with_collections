@@ -74,7 +74,7 @@ tree -L 4
       │           └── nxos
       
 * Step 6) Create the playbook to run your tasks. I use the prefix `pb` for playbook proceeded by the role name `pb_cisco_nxos.yaml`
-          See [Requirements](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#requirements) below for contents.
+          See the [example-playbook](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#example-playbook) below for contents.
 
 
 
