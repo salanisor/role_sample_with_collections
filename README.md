@@ -45,7 +45,7 @@ tree -L 4
 
 * Step 1) On a system with Internet access run the following.
 
-    ansible-galaxy init role_sample_with_collections
+      ansible-galaxy init role_sample_with_collections
 
 Requirements
 ------------
