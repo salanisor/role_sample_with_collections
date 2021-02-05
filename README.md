@@ -1,7 +1,44 @@
-Role Name
+role_cisco_nxos
 =========
 
-A brief description of the role goes here.
+This is an example role with its project folder named exactly after its purpose.
+
+A more appropriate example would be given that we're targeting Cisco's NXOS modules.
+
+    role_cisco_nxos
+    
+In this directory you will create the following structure and will allow you to turn it into a git repository to use as-is inside of Ansible Tower or cli.
+
+```
+tree -L 4
+.
+├── ansible.cfg
+├── collections
+│   └── ansible_collections
+│       ├── ansible
+│       │   └── netcommon
+│       └── cisco
+│           └── nxos
+├── defaults
+│   └── main.yml
+├── files
+├── handlers
+│   └── main.yml
+├── meta
+│   └── main.yml
+├── pb_sample_with_collections.yaml
+├── README.md
+├── tasks
+│   └── main.yml
+├── templates
+├── tests
+│   ├── inventory
+│   └── test.yml
+└── vars
+    └── main.yml
+
+14 directories,
+```
 
 Requirements
 ------------
@@ -16,16 +53,22 @@ A description of the settable variables for this role should go here, including 
 Dependencies
 ------------
 
-A list of other roles hosted on Galaxy should go here, plus any details in regards to parameters that may need to be set for other roles, or variables that are used from other roles.
+Cisco's NOX and Ansible's netcommon collections.
+
+Run on a computer with Internet access to access and download the required collections.
+
+    ansible-galaxy collection install cisco.nxos
 
 Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
 
-    - hosts: servers
+    ---
+    - hosts: nxos
+      gather_facts: true
       roles:
-         - { role: username.rolename, x: 42 }
+          - { role: role_cisco_nxos }
 
 License
 -------
