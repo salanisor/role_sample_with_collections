@@ -77,10 +77,20 @@ tree -L 4
           See the [example-playbook](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#example-playbook) below for contents.
 
 * Step 7) Add the neccessary variables to file `defaults/main.yml` required for your httpapi connection.
+          See the [role-defaults](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#role-defaults) below for contents.
+          Note that we add them to the `defaults` section since you can simply override these at runtime, especially when passing the username and password.
 
+* Step 8) Finally, add the neccesary tasks in the `tasks/main.yml` file. **Important to note** that now when calling the NXOS modules you have to prefix using the namespace (cisco) then the collection name (nxos) followed by the module name (nxos_config).
 
-
-* Step 8)
+#### Example:
+      ---
+      # tasks file for role_cisco_nxos
+      - name: "Configurable Cisco NXOS Backup Path"
+        cisco.nxos.nxos_config:
+          backup: yes
+          backup_options:
+            dir_path: "/etc/ansible/backups/nxos/{{ inventory_hostname }}"
+            filename: backup.cfg
 
 Requirements
 ------------
@@ -125,4 +135,4 @@ BSD
 Author Information
 ------------------
 
-An optional section for the role authors to include contact information, or a website (HTML is not allowed).
+Copyright: (c) 2021, salanisor <[email protected]>
