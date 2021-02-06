@@ -9,7 +9,7 @@ A more appropriate example would be given that we're targeting Cisco's NXOS modu
     
 In this directory you will create the following structure and will allow you to turn it into a git repository to use as-is within Ansible Tower or through the cli.
 
-#### Example what you will end with.
+#### Example that you will end with.
 ```
 tree -L 4
 .
