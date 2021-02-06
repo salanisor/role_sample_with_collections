@@ -20,10 +20,10 @@ tree -L 4
 │       │   └── netcommon
 │       └── cisco
 │           └── nxos
-├── pb_sample_with_collections.yaml
+├── pb_cisco_nxos.yaml
 ├── README.md
 └── roles
-    └── role_sample_with_collections
+    └── role_cisco_nxos
         ├── defaults
         │   └── main.yml
         ├── files
@@ -53,8 +53,9 @@ tree -L 4
       # Installs collections into [collections]/ansible_collections/namespace/collection_name
       collections_paths = ./collections
 
-      # Installs roles into [current dir]/roles/namespace.rolename
-      roles_path = ../
+      # Installs roles into [role_cisco_nxos]/roles/namespace.rolename
+      roles_path = ./roles
+
       
 * Step 3) Create the collections directory inside your current directory `role_cisco_nxos`
 
@@ -119,6 +120,12 @@ Example Playbook
 ----------------
 
 Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+
+Command line deploy.
+
+```
+ansible-playbook -vvvv pb_cisco_nxos.yaml
+```
 
     ---
     - hosts: nxos
