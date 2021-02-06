@@ -60,7 +60,7 @@ tree -L 4
 
       mkdir collections
 
-* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections to your collections directory.
+* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections into your collections directory.
 
       ansible-galaxy collection install cisco.nxos
 
