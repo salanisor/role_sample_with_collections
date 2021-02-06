@@ -95,7 +95,7 @@ tree -L 4
 Requirements
 ------------
 
-Completion of this above steps.
+Completion of the steps above.
 
 Role Defaults
 -------------
