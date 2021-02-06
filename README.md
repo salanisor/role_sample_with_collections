@@ -111,7 +111,7 @@ Dependencies
 
 Cisco's NXOS and Ansible's netcommon collections.
 
-Run on a computer with Internet access to access and download the required collections.
+Run on a computer with Internet access to be able to download the required collections.
 
     ansible-galaxy collection install cisco.nxos
 
