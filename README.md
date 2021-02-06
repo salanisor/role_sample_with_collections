@@ -131,7 +131,7 @@ ansible-playbook -vvvv pb_cisco_nxos.yaml
       gather_facts: false
       connection: httpapi
       roles:
-          - { role: role_cisco_nxos }
+        - { role: role_cisco_nxos }
 
 License
 -------
