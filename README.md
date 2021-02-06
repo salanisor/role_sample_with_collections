@@ -7,7 +7,7 @@ A more appropriate example would be given that we're targeting Cisco's NXOS modu
 
     role_cisco_nxos
     
-In this directory you will create the following structure and will allow you to turn it into a git repository to use as-is inside of Ansible Tower or through the cli.
+In this directory you will create the following structure and will allow you to turn it into a git repository to use as-is within Ansible Tower or through the cli.
 
 #### Example what you will end with.
 ```
