@@ -122,7 +122,7 @@ Including an example of how to use your role (for instance, with variables passe
 
     ---
     - hosts: nxos
-      gather_facts: true
+      gather_facts: false
       connection: httpapi
       roles:
           - { role: role_cisco_nxos }
