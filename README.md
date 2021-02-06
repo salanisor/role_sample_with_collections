@@ -47,7 +47,7 @@ tree -L 4
 
       mkdir -p role_cisco_nxos/{collections,roles}
       
-* Step 2) cd into the role directory and add the following text into the `ansible.cfg` file that you need to also create. This will allow you run the `ansible-galaxy` command to appropriately install Cisco's NXOS collection into your project directory. 
+* Step 2) cd into the `role_cisco_nxos` directory and add the following text into the `ansible.cfg` file that you need to also create. This will allow you run the `ansible-galaxy` command to appropriately install Cisco's NXOS collection into your project directory. 
 
       [defaults]
       # Installs collections into [collections]/ansible_collections/namespace/collection_name
