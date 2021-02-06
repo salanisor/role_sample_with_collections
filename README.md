@@ -76,7 +76,7 @@ tree -L 4
 * Step 6) Create the playbook to run your tasks. I use the prefix `pb` for playbook proceeded by the role name `pb_cisco_nxos.yaml`
           See the [example-playbook](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#example-playbook) below for contents.
 
-* Step 7) Add the neccessary variables to file `defaults/main.yml` required for your httpapi connection.
+* Step 7) Add the neccessary variables to file `defaults/main.yml` required for your `httpapi` connection.
           See the [role-defaults](https://github.com/salanisor/role_sample_with_collections/blob/master/README.md#role-defaults) below for contents.
           Note that we add them to the `defaults` section since you can simply override these at runtime, especially when passing the username and password.
 
