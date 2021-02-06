@@ -1,4 +1,4 @@
-role_cisco_nxos
+role_cisco_nxos - Do Not Use
 =========
 
 This is an example role with its project folder named exactly after its purpose.
