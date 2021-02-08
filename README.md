@@ -56,11 +56,11 @@ tree -L 4
       # Installs roles into [role_cisco_nxos]/roles/namespace.rolename
       roles_path = ./roles
    
-* Step 3) On a system with Internet access run the following to create the project directory with the necessary files.
+* Step 3) Run the following to create the project directory with the necessary files.
 
       ansible-galaxy init --init-path role_cisco_nxos/roles/ role_cisco_nxos
 
-* Step 4) Now run the following `ansible-galaxy` command to install the nxos and commons collections into your collections directory. First, change directories to the project's top level directory `role_cisco_nxos`
+* Step 4) On a system with Internet access, run the following `ansible-galaxy` command to install the nxos and commons collections into your collections directory.           First, change directories to the project's top level directory `role_cisco_nxos`
       
       ansible-galaxy collection install cisco.nxos
 
