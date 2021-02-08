@@ -123,7 +123,7 @@ Including an example of how to use your role (for instance, with variables passe
 Command line deploy.
 
 ```
-ansible-playbook -vvvv pb_cisco_nxos.yaml -e "ansible_user='httpapi-user',ansible_httpapi_password=httpapi-password'"
+ansible-playbook -vvvv pb_cisco_nxos.yaml -e "ansible_user='httpapi-user',ansible_httpapi_password='httpapi-password'"
 ```
 
     ---
