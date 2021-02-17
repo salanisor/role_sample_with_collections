@@ -103,8 +103,8 @@ Role Defaults
       ansible_httpapi_use_ssl: yes
       ansible_httpapi_validate_certs: no
       ansible_network_os: nxos
-      ansible_user: ''
-      ansible_httpapi_password: ''
+      httpapi_user: ''
+      httpapi_password: ''
 
 Dependencies
 ------------
